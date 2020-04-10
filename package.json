@@ -12,6 +12,10 @@
     "type": "git",
     "url": "git://github.com/mawrkus/node-package.git"
   },
+  "keywords": [
+    "node",
+    "package"
+  ],
   "engines": {
     "node": ">= 10"
   },
