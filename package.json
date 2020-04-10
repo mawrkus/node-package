@@ -4,7 +4,14 @@
   "description": "Node.js package template",
   "author": "mawrkus <web@sparring-partner.be>",
   "license": "MIT",
-  "private": true,
+  "engines": {
+    "node": ">= 10"
+  },
+  "files": [
+    "bin",
+    "src/index",
+    "README.md"
+  ],
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint ./src",
