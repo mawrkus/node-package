@@ -4,6 +4,14 @@
   "description": "Node.js package template",
   "author": "mawrkus <web@sparring-partner.be>",
   "license": "MIT",
+  "homepage": "https://github.com/mawrkus/node-package",
+  "bugs": {
+    "url": "https://github.com/mawrkus/node-package/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mawrkus/node-package.git"
+  },
   "engines": {
     "node": ">= 10"
   },
