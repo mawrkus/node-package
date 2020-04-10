@@ -9,7 +9,7 @@ function createMyClass() {
 }
 
 describe('MyClass', () => {
-  it('should be a class with the following API: doSomething()', async () => {
+  it('should be a class with the following API: doSomething()', () => {
     expect(MyClass).toBeInstanceOf(Function);
     expect(MyClass.prototype.doSomething).toBeInstanceOf(Function);
   });
