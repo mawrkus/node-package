@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+rm -rf .git
+
+git init
+git add README.md
+git commit -m "The origin of times..."
+
+./bin/install-deps
