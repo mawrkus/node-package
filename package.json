@@ -17,7 +17,7 @@
     "package"
   ],
   "engines": {
-    "node": ">= 10"
+    "node": ">= 12"
   },
   "files": [
     "bin/node-package.js",
@@ -38,11 +38,11 @@
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
-    "babel-jest": "^25.1.0",
-    "eslint": "^6.8.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.21.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jest": "^23.7.0",
-    "jest": "^25.1.0"
+    "eslint-plugin-jest": "^24.1.5",
+    "jest": "^26.6.3"
   }
 }
