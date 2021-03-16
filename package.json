@@ -26,7 +26,7 @@
   ],
   "main": "src/index.js",
   "scripts": {
-    "lint": "eslint ./src",
+    "lint": "eslint  ./bin ./src",
     "pretest": "yarn lint",
     "test": "jest ./src --config ./jest.json --coverage",
     "tdd": "jest ./src --config ./jest.json --watch",
@@ -37,6 +37,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
+    "@babel/eslint-parser": "^7.13.10",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/preset-env": "^7.8.4",
     "babel-jest": "^26.6.3",
     "eslint": "^7.21.0",
