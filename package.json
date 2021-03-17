@@ -17,27 +17,33 @@
     "package"
   ],
   "engines": {
-    "node": ">= 12"
+    "node": ">= 14"
   },
   "files": [
     "bin/node-package.js",
-    "src/index.js",
+    "dist",
+    "src",
     "README.md"
   ],
   "main": "src/index.js",
   "scripts": {
-    "lint": "eslint  ./bin ./src",
-    "pretest": "yarn lint",
+    "lint": "eslint ./bin ./src",
+    "pretest": "npm run lint",
     "test": "jest ./src --config ./jest.json --coverage",
     "tdd": "jest ./src --config ./jest.json --watch",
-    "prerelease": "npm run test",
+    "cli:dev": "DEBUG=node-package:cli babel-node ./bin/node-package.js",
+    "prebuild": "npm run test",
+    "build": "babel ./src --out-dir dist --ignore 'src/**/*.spec.js'",
+    "prerelease": "npm run build",
     "release": "npm version -m \"New version: %s\"",
     "postrelease": "npm run push && npm publish",
     "push": "git push origin master && git push origin --tags"
   },
   "devDependencies": {
+    "@babel/cli": "^7.13.10",
     "@babel/core": "^7.8.4",
     "@babel/eslint-parser": "^7.13.10",
+    "@babel/node": "^7.13.10",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/preset-env": "^7.8.4",
     "babel-jest": "^26.6.3",
@@ -46,5 +52,8 @@
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jest": "^24.1.5",
     "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "debug": "^4.3.1"
   }
 }

@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 
-const MyClass = require('..');
+const debug = require('debug')('node-package:cli');
+const { default: MyClass } = require('../src/MyClass');
 
 const myClass = new MyClass();
 
-myClass.doSomething();
+const result = myClass.doSomething();
+
+debug('result = "%s"', result);

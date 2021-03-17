@@ -1,6 +1,6 @@
 import MyClass from '..';
 
-function createMyClass() {
+function setup() {
   const myClass = new MyClass();
 
   return {
@@ -14,11 +14,11 @@ describe('MyClass', () => {
     expect(MyClass.prototype.doSomething).toBeInstanceOf(Function);
   });
 
-  describe('#doSomething()', () => {
+  describe('doSomething()', () => {
     it('should return something', async () => {
       const {
         myClass,
-      } = createMyClass();
+      } = setup();
 
       const result = myClass.doSomething();
 
