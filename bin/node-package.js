@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const debug = require('debug')('node-package:cli');
-const { default: MyClass } = require('../src/MyClass');
+const { MyClass } = require('../src/MyClass');
 
 const myClass = new MyClass();
 
