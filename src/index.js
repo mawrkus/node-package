@@ -1,1 +1,1 @@
-export { default } from './MyClass';
+export { MyClass } from './MyClass';

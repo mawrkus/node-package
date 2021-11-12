@@ -1,4 +1,4 @@
-import MyClass from '..';
+import { MyClass } from '../MyClass';
 
 function setup() {
   const myClass = new MyClass();

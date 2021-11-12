@@ -1,4 +1,4 @@
-class MyClass {
+export class MyClass {
   constructor() {
     this.something = 'something';
   }
@@ -7,5 +7,3 @@ class MyClass {
     return this.something;
   }
 }
-
-export default MyClass;
