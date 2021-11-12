@@ -1,24 +1,3 @@
-# 📦 Node.js package template
+# 📦 Node.js package
 
-Yarn's best friend.
-
-## Installation
-
-```shell
-npm install node-package
-```
-
-## Usage
-
-```js
-import nodePackage from 'node-package';
-```
-
-## Contribute
-
-- Fork: `git clone https://github.com/mawrkus/node-package.git`
-- Create your feature branch: `git checkout -b feature/my-new-feature`
-- Commit your changes: `git commit -am "Added some feature"`
-- Check the tests: `npm run test`
-- Push to the branch: `git push origin my-new-feature`
-- Submit a pull request :D
+Your new prototype's best friend.
