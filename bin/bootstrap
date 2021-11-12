@@ -5,6 +5,6 @@ rm -rf .git
 git init
 git add .gitignore
 git add README.md
-git commit -m "The origin of times..."
+git commit -m "The origin of time..."
 
 ./bin/install-deps
