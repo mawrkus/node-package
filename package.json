@@ -23,7 +23,8 @@
     "bin/node-package.js",
     "dist",
     "src",
-    "README.md"
+    "README.md",
+    "!**/__tests__"
   ],
   "main": "src/index.js",
   "scripts": {
